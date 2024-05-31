@@ -7,7 +7,7 @@
 - Routing and middleware
 
 2. Deployment
-- Using a PaaS Serivce Provider to deploy a dynamic site
+- Using a PaaS Service Provider to deploy a dynamic site
 
 ### Concepts Reinforced
 1. Using NPM Packages and Modules
