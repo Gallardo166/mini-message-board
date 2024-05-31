@@ -1,13 +1,13 @@
 extends layout
 
 block content
-  nav
+  nav(class="form-page")
     a(href="./") Back to message board
-  main
+  main(class="form-page")
     h1= title
     form(action="/new", method="POST") 
       label(for="user") Username
       input(type="text", id="user" name="user", required)
       label(for="text") Message
       textarea(id="text", name="text", required)
-      button(type="submit") Post
+      button(type="submit" id="submit-message") Post

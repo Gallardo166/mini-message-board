@@ -1,13 +1,13 @@
 extends layout
 
 block content
-  main
+  main(id="index")
     h1= title
     ul
       - for (let i = 0; i<messages.length; i++) 
         li
-          p= messages[i].text
-          p= messages[i].user
-          p= messages[i].added
+          div(class="message")
+            p(class="text")= messages[i].text
+            p(class="details")= `${messages[i].user}, ${messages[i].added}`
     a(href="./new") 
-      button Post a message
+      button(id="post-message") Post a message

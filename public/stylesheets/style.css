@@ -6,3 +6,78 @@ body {
 a {
   color: #00B7FF;
 }
+
+main#index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  width: 90%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+div.message {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+p.details {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+button#post-message {
+  margin-top: 16px;
+  padding: 10px 16px;
+  color: white;
+  border: none;
+  background-color: #00B7FF;
+  cursor: pointer;
+}
+
+button#post-message:hover {
+  background-color: #78d0f3;
+}
+
+main.form-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 80%;
+  display: grid;
+  grid-template: 24px 3fr 100px / 1fr 3fr;
+  gap: 8px;
+}
+
+label {
+  justify-self: end;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button#submit-message {
+  margin-top: 60px;
+  padding: 10px 16px;
+  color: white;
+  border: none;
+  background-color: #00B7FF;
+  cursor: pointer;
+  grid-area: 3 / 1 / span 1 / span 2;
+  align-self: center;
+  justify-self: center;
+  width: 30%;
+}
