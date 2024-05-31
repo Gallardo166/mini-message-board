@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  nav
+    a(href="./") Back to message board
+  main
+    h1= title
+    form(action="/new", method="POST") 
+      label(for="user") Username
+      input(type="text", id="user" name="user", required)
+      label(for="text") Message
+      textarea(id="text", name="text", required)
+      button(type="submit") Post

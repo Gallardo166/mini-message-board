@@ -1,10 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  ul
-    - for (let i = 0; i<messages.length; i++) 
-      li
-        p= messages[i].text
-        p= messages[i].user
-        p= messages[i].added
+  main
+    h1= title
+    ul
+      - for (let i = 0; i<messages.length; i++) 
+        li
+          p= messages[i].text
+          p= messages[i].user
+          p= messages[i].added
+    a(href="./new") 
+      button Post a message
